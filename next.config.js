@@ -3,12 +3,6 @@
  */
 const nextConfig = {
   output: "export",
-  //   exportPathMap: function () {
-  //     return {
-  //       "/": { page: "/" },
-  //       // Add other routes/pages here
-  //     };
-  //   },
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,
 
@@ -17,6 +11,10 @@ const nextConfig = {
 
   // Optional: Change the output directory `out` -> `dist`
   // distDir: 'dist',
+  pages: async function ({ defaultPages }) {
+    // Define your custom pages here
+    return defaultPages;
+  },
 };
 
 module.exports = nextConfig;
