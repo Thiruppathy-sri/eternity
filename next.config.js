@@ -3,12 +3,12 @@
  */
 const nextConfig = {
   output: "export",
-  exportPathMap: function () {
-    return {
-      "/": { page: "/" },
-      // Add other routes/pages here
-    };
-  },
+  //   exportPathMap: function () {
+  //     return {
+  //       "/": { page: "/" },
+  //       // Add other routes/pages here
+  //     };
+  //   },
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,
 
