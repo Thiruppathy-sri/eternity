@@ -15,17 +15,26 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+* {
+  box-sizing: border-box;
 }
-
+body {
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.2;
+  /* background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  ); */
+}
+a {
+  padding: 0px;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
